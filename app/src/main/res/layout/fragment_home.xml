@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ghost_white"
+    tools:context="com.komsi.lab.kjur.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llStores"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/corner_layout"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_stores_blue"
+                android:gravity="center|end">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="@font/maven_pro_bold"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/stores"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llScanQR"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/corner_layout"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_scan"
+                android:gravity="center|end">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="@font/maven_pro_bold"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/scan_qr"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

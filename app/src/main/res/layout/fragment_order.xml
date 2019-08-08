@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ghost_white"
+    tools:context="com.komsi.lab.kjur.OrderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llOrderH"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/corner_layout"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_orderh"
+                android:gravity="center|end">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="@font/maven_pro_bold"
+                    android:gravity="center_vertical|end"
+                    android:lines="2"
+                    android:text="@string/order_history"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_green"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCPay"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/corner_layout"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_cpay"
+                android:gravity="center|end">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="@font/maven_pro_bold"
+                    android:gravity="center_vertical|end"
+                    android:lines="2"
+                    android:text="@string/choose_payment"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_salmon"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llWPay"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/corner_layout"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_wpay"
+                android:gravity="center|end">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:fontFamily="@font/maven_pro_bold"
+                    android:gravity="center_vertical|end"
+                    android:lines="2"
+                    android:text="@string/waiting_payment"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mediumPurple"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
